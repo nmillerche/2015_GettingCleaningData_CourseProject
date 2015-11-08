@@ -1,4 +1,4 @@
-# 2015_GettingCleaningData_CourseProject
+# 2015 Getting and Cleaning Data Course Project
 Course Project for "Getting and Cleaning Data" on Coursera (https://class.coursera.org/getdata-034), November 2015.
 
 ## Project Description
