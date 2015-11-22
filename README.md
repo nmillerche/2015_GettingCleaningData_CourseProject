@@ -23,15 +23,15 @@ The script first checks to see if the data has been downloaded to the working di
 
 ### Merge the training and the test sets to create one data set.
 
-Training data and labels (x_train and y_train) are merged with subject IDs columnwise as train_data. Likewise, test data and labels (x_test and y_test) are merged with subject IDs columnwise as test_data. The data are merged rowwise as merged_data, and column labels applied.
+Training data and labels (`x_train` and `y_train`) are merged with subject IDs columnwise as `train_data`. Likewise, test data and labels (`x_test` and `y_test`) are merged with subject IDs columnwise as `test_data`. The data are merged rowwise as merged_data, and column labels applied.
 
 ### Extract only the measurements on the mean and standard deviation for each measurement.
 
-Uses the `grepl` function to search the merged data for columns whose labels contain "mean" or "std", as well as the Subject and ActivityId columns. Stores these columns to a subset called "mean_std_data".
+The script uses the `grepl` function to search the merged data for columns whose labels contain "mean" or "std", as well as the Subject and ActivityId columns. Stores these columns to a subset called `mean_std_data`.
 
 ### Use descriptive activity names to name the activities in the data set
 
-Takes the activity labels extracted from the "activity_labels.txt" file included with the data set, and replaces the numerical indicators with their corresponding description in the "mean_std_data" ActivityId column.
+Takes the activity labels extracted from the `activity_labels.txt` file included with the data set, and replaces the numerical indicators with their corresponding description in the `mean_std_data` ActivityId column.
 
 ### Appropriately label the data set with descriptive variable names
 
